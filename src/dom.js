@@ -7,7 +7,7 @@ const weatherCard = (data) => {
   city.textContent = data.location.name;
   state.textContent = data.location.region;
   country.textContent = data.location.country;
-  temp.textContent = `${data.current.temp_c}°`;
+  temp.textContent = `Temp: ${data.current.temp_c}°`;
   img.src = data.current.condition.icon;
 };
 const forecastCard = (data) => {
@@ -18,8 +18,8 @@ const forecastCard = (data) => {
     forecastDiv.innerHTML += `
       <div class='forecast-card'>
       <h1>${day.date}</h1>
-      <h3>${day.day.maxtemp_f}°</h3>
-      <h3>${day.day.mintemp_f}°</h3>
+      <h3>High ${day.day.maxtemp_f}°</h3>
+      <h3>Low ${day.day.mintemp_f}°</h3>
       <img src="${day.day.condition.icon}"/>
       </div>
       `;

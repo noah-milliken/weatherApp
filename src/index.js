@@ -1,4 +1,5 @@
 import { getWeatherData } from './api';
+import './style.css';
 
 const form = document.getElementById('input-form');
 form.addEventListener('submit', (e) => {
