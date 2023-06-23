@@ -6,6 +6,23 @@
     
   </head>
   <body>
-    <script src="./main.js"></script>
+    <form action="" id="unit-select">
+      <label for="units"></label>
+      <input type="checkbox" name="units" id="unit-select">
+    </form>
+    <form action="" id="input-form">
+      <label for="input"></label>
+      <input type="text" name="input" id="user-input" value="ellsworth">
+      <button type="submit">Get Weather</button>
+      <div class="weather-card" id="weather-card">
+        <h1 id="card-city"></h1>
+        <h2 id="card-state"></h2>
+        <h2 id="card-country"></h2>
+        <h2 id="card-temp"></h2>
+        <img src="" alt="" class="card-image" id="card-image">
+      </div>
+      <div class="forecast-div" id="forecast-div"></div>
+    </form>
+    <script src="./bundle.js"></script>
   </body>
 </html>
